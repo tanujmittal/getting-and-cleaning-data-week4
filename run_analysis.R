@@ -154,8 +154,8 @@ meansBySubActivityDs <- dcast(tempDs, ... ~ variable, fun.aggregate = mean)
 # remove the study type column
 mergedDs <- select(mergedDs, c(562,563,1:561))
 
-write.table(mergedDs, "./tidy_merged.txt")
-write.table(meansBySubActivityDs, "./tidy_meansBySubActivity.txt")
+write.table(mergedDs, "./tidy_merged.txt", row.names = FALSE)
+write.table(meansBySubActivityDs, "./tidy_meansBySubActivity.txt", row.names = FALSE)
 
 # Change back to the working directory where we started
 setwd(currentDir)
