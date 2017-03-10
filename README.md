@@ -23,4 +23,4 @@ The scripts takes the following approach:
 11. Use melt to flatten the mergedDs on key columns Activity and Subject.
 12. Use dcast along with mean funciton to widen the mergedDs and calculate the means of all of the variables.
 13. This gives meansBySubActivityDs which fulfills Objective 5.
-14. Export mergedDs and meansBySubActivityDs so that they be saved to flatfile and uploaded on github.
+14. Export mergedDs (tidy_merged.txt in Github) and meansBySubActivityDs (tidy_meansBySubActivity.txt in Github) so that they be saved to flatfile and uploaded on github.
